@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Cairo-Bold.ttf">
+            <string>Cairo-Bold</string>
+        </array>
+        <array key="Cairo-Regular.ttf">
+            <string>Cairo-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="desView" customModule="Alem" customModuleProvider="target">
+            <connections>
+                <outlet property="addresslabel" destination="ztE-xP-Q5x" id="dP6-VT-ELo"/>
+                <outlet property="dec" destination="0Th-qn-pVd" id="jCW-tG-ZNP"/>
+                <outlet property="experLabel" destination="MFC-jt-QKO" id="iWy-GY-8tA"/>
+                <outlet property="levels" destination="IwE-5K-gdr" id="ocJ-Hl-p8f"/>
+                <outlet property="priceLabel" destination="3wZ-RM-9Vq" id="waS-mA-7ag"/>
+                <outlet property="subjectLabel" destination="ASG-nZ-oiR" id="4XG-eC-kGp"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="418" height="443"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eCM-G4-Edl">
+                    <rect key="frame" x="16" y="16" width="386" height="32"/>
+                    <fontDescription key="fontDescription" name="Cairo-Bold" family="Cairo" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Egypt, Cairo, Giza" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ztE-xP-Q5x">
+                    <rect key="frame" x="32" y="48" width="370" height="22.5"/>
+                    <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="12"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Subject" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4hM-QC-QNP">
+                    <rect key="frame" x="16" y="78.5" width="386" height="32"/>
+                    <fontDescription key="fontDescription" name="Cairo-Bold" family="Cairo" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Math teacher" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ASG-nZ-oiR">
+                    <rect key="frame" x="32" y="110.5" width="370" height="22.5"/>
+                    <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="12"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Levels" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UXr-aP-1ew">
+                    <rect key="frame" x="16" y="141" width="386" height="32"/>
+                    <fontDescription key="fontDescription" name="Cairo-Bold" family="Cairo" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="level 1,2,3 For high school " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IwE-5K-gdr">
+                    <rect key="frame" x="32" y="173" width="370" height="22.5"/>
+                    <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="12"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Experience " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uwm-Jd-Nq7">
+                    <rect key="frame" x="16" y="203.5" width="386" height="32"/>
+                    <fontDescription key="fontDescription" name="Cairo-Bold" family="Cairo" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MFC-jt-QKO">
+                    <rect key="frame" x="32" y="235.5" width="378" height="45"/>
+                    <string key="text">3years in high school working as math teacher Graduated 
+from Cairo University</string>
+                    <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="12"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Prices" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yqQ-qV-bOO">
+                    <rect key="frame" x="16" y="288.5" width="386" height="32"/>
+                    <fontDescription key="fontDescription" name="Cairo-Bold" family="Cairo" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100 EGP By Hour-200 EGP By Week-1000 EGP By Month" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3wZ-RM-9Vq">
+                    <rect key="frame" x="32" y="320.5" width="378" height="22.5"/>
+                    <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="12"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cBY-Va-XzK">
+                    <rect key="frame" x="16" y="351" width="394" height="32"/>
+                    <fontDescription key="fontDescription" name="Cairo-Bold" family="Cairo" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="6" translatesAutoresizingMaskIntoConstraints="NO" id="0Th-qn-pVd">
+                    <rect key="frame" x="32" y="383" width="378" height="225"/>
+                    <mutableString key="text"> labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea.Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea.Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea.invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea.Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam  xyz</mutableString>
+                    <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="12"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="4hM-QC-QNP" secondAttribute="trailing" constant="16" id="26V-R7-Hb7"/>
+                <constraint firstItem="IwE-5K-gdr" firstAttribute="top" secondItem="UXr-aP-1ew" secondAttribute="bottom" id="3zT-g6-TKY"/>
+                <constraint firstItem="eCM-G4-Edl" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="4tZ-lL-w3r"/>
+                <constraint firstItem="UXr-aP-1ew" firstAttribute="top" secondItem="ASG-nZ-oiR" secondAttribute="bottom" constant="8" id="6L5-zU-XVp"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="UXr-aP-1ew" secondAttribute="trailing" constant="16" id="8hG-zV-52x"/>
+                <constraint firstItem="cBY-Va-XzK" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="9Az-GV-V6X"/>
+                <constraint firstItem="ztE-xP-Q5x" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="32" id="9Du-UP-o20"/>
+                <constraint firstItem="ASG-nZ-oiR" firstAttribute="top" secondItem="4hM-QC-QNP" secondAttribute="bottom" id="BXu-QH-Y33"/>
+                <constraint firstAttribute="trailing" secondItem="3wZ-RM-9Vq" secondAttribute="trailing" constant="8" id="Cyl-lA-9o0"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="IwE-5K-gdr" secondAttribute="trailing" constant="16" id="Dva-YW-yGh"/>
+                <constraint firstItem="3wZ-RM-9Vq" firstAttribute="top" secondItem="yqQ-qV-bOO" secondAttribute="bottom" id="GnW-a4-Kjf"/>
+                <constraint firstItem="MFC-jt-QKO" firstAttribute="top" secondItem="uwm-Jd-Nq7" secondAttribute="bottom" id="HkV-yR-67r"/>
+                <constraint firstItem="0Th-qn-pVd" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="32" id="Jdi-Hi-jt6"/>
+                <constraint firstItem="eCM-G4-Edl" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="16" id="Kss-dD-Eru"/>
+                <constraint firstItem="yqQ-qV-bOO" firstAttribute="top" secondItem="MFC-jt-QKO" secondAttribute="bottom" constant="8" id="LJy-Dh-bvh"/>
+                <constraint firstItem="ASG-nZ-oiR" firstAttribute="top" secondItem="4hM-QC-QNP" secondAttribute="bottom" id="Ons-QQ-XOJ"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="yqQ-qV-bOO" secondAttribute="trailing" constant="16" id="SlW-zR-eFr"/>
+                <constraint firstItem="IwE-5K-gdr" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="32" id="Tnv-Ai-wNa"/>
+                <constraint firstAttribute="trailing" secondItem="eCM-G4-Edl" secondAttribute="trailing" constant="16" id="V8A-sD-D8O"/>
+                <constraint firstItem="3wZ-RM-9Vq" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="32" id="XSq-Us-Vxt"/>
+                <constraint firstItem="UXr-aP-1ew" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="a6q-ta-oIu"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="uwm-Jd-Nq7" secondAttribute="trailing" constant="16" id="aVm-7c-whX"/>
+                <constraint firstItem="ASG-nZ-oiR" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="32" id="bPO-r9-XXa"/>
+                <constraint firstItem="MFC-jt-QKO" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="32" id="bSB-eO-KEX"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="cBY-Va-XzK" secondAttribute="trailing" constant="8" id="eSB-4L-WHE"/>
+                <constraint firstItem="0Th-qn-pVd" firstAttribute="top" secondItem="cBY-Va-XzK" secondAttribute="bottom" id="hRy-qb-cGo"/>
+                <constraint firstItem="uwm-Jd-Nq7" firstAttribute="top" secondItem="IwE-5K-gdr" secondAttribute="bottom" constant="8" id="iNt-U0-WId"/>
+                <constraint firstItem="3wZ-RM-9Vq" firstAttribute="top" secondItem="yqQ-qV-bOO" secondAttribute="bottom" id="ieP-N9-GEq"/>
+                <constraint firstItem="yqQ-qV-bOO" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="iyP-VJ-vot"/>
+                <constraint firstItem="cBY-Va-XzK" firstAttribute="top" secondItem="3wZ-RM-9Vq" secondAttribute="bottom" constant="8" id="jSf-YD-vGH"/>
+                <constraint firstItem="3wZ-RM-9Vq" firstAttribute="top" secondItem="yqQ-qV-bOO" secondAttribute="bottom" id="kt4-vC-bFf"/>
+                <constraint firstItem="MFC-jt-QKO" firstAttribute="top" secondItem="uwm-Jd-Nq7" secondAttribute="bottom" id="mbt-wP-SdN"/>
+                <constraint firstItem="IwE-5K-gdr" firstAttribute="top" secondItem="UXr-aP-1ew" secondAttribute="bottom" id="miK-Cg-q3z"/>
+                <constraint firstItem="ztE-xP-Q5x" firstAttribute="top" secondItem="eCM-G4-Edl" secondAttribute="bottom" id="msE-XF-tgh"/>
+                <constraint firstItem="4hM-QC-QNP" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="nJI-Uc-o5g"/>
+                <constraint firstItem="uwm-Jd-Nq7" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="oB0-ce-uLk"/>
+                <constraint firstAttribute="trailing" secondItem="MFC-jt-QKO" secondAttribute="trailing" constant="8" id="oQk-2W-O3Q"/>
+                <constraint firstItem="0Th-qn-pVd" firstAttribute="top" secondItem="cBY-Va-XzK" secondAttribute="bottom" id="ojP-xv-cv3"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="ztE-xP-Q5x" secondAttribute="trailing" constant="16" id="pUz-OZ-3K8"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="ASG-nZ-oiR" secondAttribute="trailing" constant="16" id="rfE-Tn-mTi"/>
+                <constraint firstItem="4hM-QC-QNP" firstAttribute="top" secondItem="ztE-xP-Q5x" secondAttribute="bottom" constant="8" id="tyx-Zu-cSl"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="0Th-qn-pVd" secondAttribute="trailing" constant="8" id="wUE-4t-1WX"/>
+                <constraint firstItem="MFC-jt-QKO" firstAttribute="top" secondItem="uwm-Jd-Nq7" secondAttribute="bottom" id="wrH-EN-iE6"/>
+                <constraint firstItem="0Th-qn-pVd" firstAttribute="top" secondItem="cBY-Va-XzK" secondAttribute="bottom" id="zeD-Bh-dQr"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="134.78260869565219" y="153.01339285714286"/>
+        </view>
+    </objects>
+</document>

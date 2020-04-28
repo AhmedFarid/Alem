@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="JYj-o2-csB">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Cairo-Regular.ttf">
+            <string>Cairo-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Side Mnue-->
+        <scene sceneID="L13-ZK-AdS">
+            <objects>
+                <viewController id="oLf-el-Nu4" customClass="sideMnue" customModule="Alem" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="63g-Xt-9oN">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="9" translatesAutoresizingMaskIntoConstraints="NO" id="BvJ-Vi-Ptt">
+                                <rect key="frame" x="124" y="126" width="166" height="105"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="zIT-sf-Kid">
+                                <rect key="frame" x="32" y="271" width="81" height="392"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5ea-ms-hhb">
+                                        <rect key="frame" x="0.0" y="0.0" width="46" height="46"/>
+                                        <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="18"/>
+                                        <state key="normal" title="Home">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7lx-ja-JXG">
+                                        <rect key="frame" x="0.0" y="78" width="50" height="46"/>
+                                        <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="18"/>
+                                        <state key="normal" title="Profile">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kI3-Lw-WEx">
+                                        <rect key="frame" x="0.0" y="156" width="68" height="80"/>
+                                        <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="18"/>
+                                        <state key="normal">
+                                            <string key="title">About us 
+</string>
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h7X-ar-8Rq">
+                                        <rect key="frame" x="0.0" y="268" width="81" height="46"/>
+                                        <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="18"/>
+                                        <state key="normal" title="Contact us">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MC5-tV-C6E">
+                                        <rect key="frame" x="0.0" y="346" width="57" height="46"/>
+                                        <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="18"/>
+                                        <state key="normal" title="Logout ">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.1333333333" green="0.80000000000000004" blue="0.89411764709999997" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="zIT-sf-Kid" firstAttribute="top" secondItem="dvM-R3-xWd" secondAttribute="top" constant="183" id="0oV-Zc-b9g"/>
+                            <constraint firstItem="BvJ-Vi-Ptt" firstAttribute="height" secondItem="63g-Xt-9oN" secondAttribute="height" multiplier="0.117188" id="Hao-9g-X36"/>
+                            <constraint firstItem="BvJ-Vi-Ptt" firstAttribute="top" secondItem="dvM-R3-xWd" secondAttribute="top" constant="38" id="Kwf-1j-fAs"/>
+                            <constraint firstItem="BvJ-Vi-Ptt" firstAttribute="width" secondItem="63g-Xt-9oN" secondAttribute="width" multiplier="0.400966" id="fPe-ty-DCj"/>
+                            <constraint firstItem="zIT-sf-Kid" firstAttribute="leading" secondItem="dvM-R3-xWd" secondAttribute="leading" constant="32" id="gC5-rY-fcC"/>
+                            <constraint firstItem="BvJ-Vi-Ptt" firstAttribute="centerX" secondItem="63g-Xt-9oN" secondAttribute="centerX" id="nof-fd-bna"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="dvM-R3-xWd"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="tuE-3u-qxi"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="E2q-UE-aZM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1069.5652173913045" y="154.6875"/>
+        </scene>
+        <!--Side Menu Navigation Controller-->
+        <scene sceneID="EJp-L7-4IZ">
+            <objects>
+                <navigationController storyboardIdentifier="RightMenu" automaticallyAdjustsScrollViewInsets="NO" id="JYj-o2-csB" customClass="SideMenuNavigationController" customModule="SideMenu" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="j8g-Rs-gcG">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="leftSide" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <segue destination="oLf-el-Nu4" kind="relationship" relationship="rootViewController" id="enH-gf-R40"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jef-z3-ozK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="160.86956521739131" y="160.71428571428569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="9" width="298" height="191"/>
+    </resources>
+</document>

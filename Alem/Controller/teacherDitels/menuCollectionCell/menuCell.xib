@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Cairo-Bold.ttf">
+            <string>Cairo-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="menuCell" customModule="Alem" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="90" height="49"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="90" height="49"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reserve" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sYu-jC-3li">
+                        <rect key="frame" x="20.5" y="16" width="49" height="26.5"/>
+                        <fontDescription key="fontDescription" name="Cairo-Bold" family="Cairo" pointSize="14"/>
+                        <color key="textColor" red="0.45882352939999999" green="0.86666666670000003" blue="0.30196078430000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FBw-4J-EEG">
+                        <rect key="frame" x="20.5" y="38.5" width="49" height="10"/>
+                        <color key="backgroundColor" red="0.45882352941176469" green="0.8666666666666667" blue="0.30196078431372547" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="10" id="S4Z-uX-SNc"/>
+                        </constraints>
+                    </view>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="calendars" translatesAutoresizingMaskIntoConstraints="NO" id="wTI-TR-JUs">
+                        <rect key="frame" x="35" y="0.0" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="20" id="Vzn-zx-COc"/>
+                            <constraint firstAttribute="height" constant="20" id="rJ8-Pv-sz8"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="sYu-jC-3li" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="4QV-e4-Vrz"/>
+                <constraint firstItem="wTI-TR-JUs" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="5gS-oF-smz"/>
+                <constraint firstItem="FBw-4J-EEG" firstAttribute="top" secondItem="sYu-jC-3li" secondAttribute="bottom" constant="-4" id="W26-4C-Ljl"/>
+                <constraint firstItem="sYu-jC-3li" firstAttribute="top" secondItem="wTI-TR-JUs" secondAttribute="bottom" constant="-4" id="bIq-hN-Xhs"/>
+                <constraint firstItem="FBw-4J-EEG" firstAttribute="leading" secondItem="sYu-jC-3li" secondAttribute="leading" id="eA6-2A-6Mc"/>
+                <constraint firstItem="FBw-4J-EEG" firstAttribute="trailing" secondItem="sYu-jC-3li" secondAttribute="trailing" id="oFQ-zG-4bR"/>
+                <constraint firstItem="wTI-TR-JUs" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="pOh-nS-WpX"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="90" height="49"/>
+            <connections>
+                <outlet property="buttomView" destination="FBw-4J-EEG" id="Lv5-nZ-Xlb"/>
+                <outlet property="icon" destination="wTI-TR-JUs" id="jAV-C2-la9"/>
+                <outlet property="title" destination="sYu-jC-3li" id="Jsj-JR-Z0g"/>
+            </connections>
+            <point key="canvasLocation" x="307.24637681159425" y="114.84375"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="calendars" width="18.5" height="18.5"/>
+    </resources>
+</document>

@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="teacherCell" customModule="Alem" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="392" height="182"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="392" height="182"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1RG-4C-WjN">
+                        <rect key="frame" x="0.0" y="0.0" width="392" height="182"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Path 2520" translatesAutoresizingMaskIntoConstraints="NO" id="ttv-ig-JK6">
+                                <rect key="frame" x="8" y="8" width="140" height="138"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="140" id="Gea-w6-9p5"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="xus-R6-XHe">
+                                <rect key="frame" x="14" y="154" width="128.5" height="12"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o1K-bq-rgj" customClass="CosmosView" customModule="Cosmos">
+                                        <rect key="frame" x="0.0" y="0.5" width="60" height="11"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="60" id="dPQ-Tu-PfZ"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="image" keyPath="filledImage" value="star"/>
+                                            <userDefinedRuntimeAttribute type="image" keyPath="emptyImage" value="stars"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="starSize">
+                                                <real key="value" value="11"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="rating">
+                                                <real key="value" value="3"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="starMargin">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(300 Person)" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r1a-Dw-eyz">
+                                        <rect key="frame" x="65" y="0.0" width="63.5" height="12"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="12" id="D1U-f5-j2Q"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="top" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="LUI-Sx-sZj">
+                                <rect key="frame" x="156" y="8" width="228" height="17"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ahmed farid ahmed" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Psf-JZ-rLJ">
+                                        <rect key="frame" x="0.0" y="0.0" width="164.5" height="17"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="math" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="klL-xz-jdV">
+                                        <rect key="frame" x="180.5" y="0.0" width="47.5" height="17"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="81n-Jy-mC5">
+                                <rect key="frame" x="156" y="33" width="228" height="70"/>
+                                <mutableString key="text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea.Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea.Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea.Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea.</mutableString>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="10"/>
+                                <color key="textColor" red="0.46666666666666667" green="0.46666666666666667" blue="0.46666666666666667" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="top" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="DH7-Rp-17R">
+                                <rect key="frame" x="156" y="134" width="228" height="12"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Egypt,Cairo,Giza" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tbX-lw-J7F">
+                                        <rect key="frame" x="0.0" y="0.0" width="102" height="12"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100 EGP By Hour" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EHD-xx-mi2">
+                                        <rect key="frame" x="118" y="0.0" width="110" height="12"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yhp-eK-cA1" customClass="coustomRoundedButton" customModule="Alem" customModuleProvider="target">
+                                <rect key="frame" x="318.5" y="150.5" width="65.5" height="25"/>
+                                <color key="backgroundColor" red="0.45882352939999999" green="0.86666666670000003" blue="0.29411764709999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="Gec-gR-OY6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <state key="normal" title="Reserve">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                        <color key="value" red="0.2901960784" green="0.64313725489999995" blue="0.72941176470000002" alpha="0.5" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="ttv-ig-JK6" firstAttribute="leading" secondItem="1RG-4C-WjN" secondAttribute="leading" constant="8" id="0Pb-N0-jT4"/>
+                            <constraint firstItem="DH7-Rp-17R" firstAttribute="leading" secondItem="ttv-ig-JK6" secondAttribute="trailing" constant="8" id="4kc-VU-MBK"/>
+                            <constraint firstItem="ttv-ig-JK6" firstAttribute="top" secondItem="1RG-4C-WjN" secondAttribute="top" constant="8" id="DK3-yL-zze"/>
+                            <constraint firstItem="81n-Jy-mC5" firstAttribute="leading" secondItem="ttv-ig-JK6" secondAttribute="trailing" constant="8" id="E1u-y4-m5o"/>
+                            <constraint firstItem="yhp-eK-cA1" firstAttribute="width" secondItem="1RG-4C-WjN" secondAttribute="width" multiplier="0.167553" id="KvF-In-icD"/>
+                            <constraint firstItem="xus-R6-XHe" firstAttribute="centerX" secondItem="ttv-ig-JK6" secondAttribute="centerX" id="Lew-jT-A6H"/>
+                            <constraint firstAttribute="trailing" secondItem="DH7-Rp-17R" secondAttribute="trailing" constant="8" id="LzB-Mb-VdV"/>
+                            <constraint firstItem="xus-R6-XHe" firstAttribute="top" secondItem="ttv-ig-JK6" secondAttribute="bottom" constant="8" id="d4Q-ph-b14"/>
+                            <constraint firstAttribute="trailing" secondItem="81n-Jy-mC5" secondAttribute="trailing" constant="8" id="dAL-1s-o0z"/>
+                            <constraint firstItem="DH7-Rp-17R" firstAttribute="bottom" secondItem="ttv-ig-JK6" secondAttribute="bottom" id="gtB-rz-nxG"/>
+                            <constraint firstItem="LUI-Sx-sZj" firstAttribute="top" secondItem="ttv-ig-JK6" secondAttribute="top" id="kH0-na-Lvq"/>
+                            <constraint firstAttribute="trailing" secondItem="yhp-eK-cA1" secondAttribute="trailing" constant="8" id="l8E-Qr-TLg"/>
+                            <constraint firstItem="LUI-Sx-sZj" firstAttribute="leading" secondItem="ttv-ig-JK6" secondAttribute="trailing" constant="8" id="quP-LL-ozV"/>
+                            <constraint firstAttribute="bottom" secondItem="xus-R6-XHe" secondAttribute="bottom" constant="16" id="unW-8S-2tl"/>
+                            <constraint firstItem="yhp-eK-cA1" firstAttribute="centerY" secondItem="xus-R6-XHe" secondAttribute="centerY" constant="3" id="vJa-or-TbY"/>
+                            <constraint firstItem="81n-Jy-mC5" firstAttribute="top" secondItem="LUI-Sx-sZj" secondAttribute="bottom" constant="8" id="wwQ-M1-7FM"/>
+                            <constraint firstAttribute="trailing" secondItem="LUI-Sx-sZj" secondAttribute="trailing" constant="8" id="zI4-PY-Cbh"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                <color key="value" red="0.7803921568627451" green="0.81568627450980391" blue="0.97254901960784312" alpha="0.5" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                <size key="value" width="-27" height="38"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="1RG-4C-WjN" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="7DO-m7-MuN"/>
+                <constraint firstItem="1RG-4C-WjN" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="gMA-6O-B2g"/>
+                <constraint firstAttribute="trailing" secondItem="1RG-4C-WjN" secondAttribute="trailing" id="qBL-GH-mNZ"/>
+                <constraint firstAttribute="bottom" secondItem="1RG-4C-WjN" secondAttribute="bottom" id="sIk-fp-Cnw"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="392" height="182"/>
+            <point key="canvasLocation" x="17.39130434782609" y="140.625"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="Path 2520" width="128" height="91"/>
+        <image name="star" width="12.5" height="12.5"/>
+        <image name="stars" width="12.5" height="12.5"/>
+    </resources>
+</document>
